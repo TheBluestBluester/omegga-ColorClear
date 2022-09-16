@@ -58,7 +58,7 @@ class ColorClear {
 			const brsbrick = brs.bricks;
 			let count = 0;
 			const first = brsbrick.findIndex(br => colors.includes(br.color));
-			const last = brsbrick.length - 1 - brsbrick.slice().reverse().findIndex(br => colors.includes(br.color) && mats.includes(br.material_index) && (!tcs || shapes.includes(brs.brick_assets[br.asset_name_index])));
+			const last = brsbrick.length - brsbrick.slice().reverse().findIndex(br => colors.includes(br.color) && mats.includes(br.material_index) && (!tcs || shapes.includes(brs.brick_assets[br.asset_name_index])));
 			for(var b=first;b<last;b++) {
 				let brick = brsbrick[b];
 				if(brick == null) {
