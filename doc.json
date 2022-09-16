@@ -1,0 +1,27 @@
+{
+  "name": "ColorClear",
+  "description": "Remove bricks with the same color",
+  "author": "Bluester16",
+  "config": {
+    "TrustedRoles": {
+      "description": "List of roles that can use this plugin.",
+      "type": "list",
+      "itemType": "string",
+      "default": []
+    }
+  },
+  "commands": [
+    {
+      "name": "colorclear",
+      "description": "Removes bricks with the same color in the selected region.",
+      "example": "/colorclear shape",
+      "args": [
+         {
+         "name": "shape",
+          "description": "Wether or not to check for the brick shape too.",
+          "required": false
+         }
+      ]
+    }
+  ]
+}
