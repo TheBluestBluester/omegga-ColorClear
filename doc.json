@@ -17,8 +17,28 @@
       "example": "/colorclear shape",
       "args": [
          {
-         "name": "shape",
-          "description": "Wether or not to check for the brick shape too.",
+         "name": "-shp",
+          "description": "Wether or not to check for the brick shape too. Works only with -sel",
+          "required": false
+         },
+	 {
+         "name": "-reg",
+          "description": "Clear a selected region.",
+          "required": false
+         },
+	 {
+         "name": "-sel",
+          "description": "Get colors and materials in the selected region.",
+          "required": false
+         },
+	 {
+         "name": "-clp",
+          "description": "Loads the final save to the clipboard.",
+          "required": false
+         },
+	 {
+         "name": "-wsv",
+          "description": "Saves the final save as a brs file. The saved files will mostly look like this: Colorclear-2022-8-1-21-15-3",
           "required": false
          }
       ]
